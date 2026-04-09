@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - HSM Beauty Parlor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>HSM</h1>
+                <p class="tagline">Luxury Beauty</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="appointments.html" class="nav-link appointment-btn active">Book Appointment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Book Your Appointment</h1>
+        <p>Schedule your perfect beauty experience</p>
+    </div>
+
+    <!-- Appointment Booking Section -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-form-wrapper">
+                    <h2>Schedule Your Appointment</h2>
+                    <form id="appointmentForm" class="appointment-form">
+                        <!-- Personal Information -->
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+1-800-XXX-XXXX">
+                            </div>
+                        </div>
+
+                        <!-- Service Selection -->
+                        <div class="form-group">
+                            <label for="service">Select Service *</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Select a Service --</option>
+                                <optgroup label="Hair Services">
+                                    <option value="haircut">Basic Haircut - $35</option>
+                                    <option value="hairstyle">Premium Haircut & Style - $55</option>
+                                    <option value="haircolor">Hair Color - $75</option>
+                                    <option value="highlights">Highlights/Balayage - $125</option>
+                                    <option value="hairtreatment">Hair Treatment - $65</option>
+                                    <option value="blowdry">Blow Dry Styling - $40</option>
+                                    <option value="bridalhair">Bridal Hair - $150</option>
+                                </optgroup>
+                                <optgroup label="Makeup Services">
+                                    <option value="basicmakeup">Basic Makeup - $45</option>
+                                    <option value="partymakeup">Party Makeup - $65</option>
+                                    <option value="profmakeup">Professional Makeup - $85</option>
+                                    <option value="bridalmakeup">Bridal Makeup - $150</option>
+                                    <option value="airbrushmakeup">Airbrush Makeup - $95</option>
+                                </optgroup>
+                                <optgroup label="Facial Services">
+                                    <option value="basicfacial">Basic Facial - $50</option>
+                                    <option value="hydrafacial">Hydrating Facial - $70</option>
+                                    <option value="antiaging">Anti-Aging Treatment - $95</option>
+                                    <option value="chemicalpeel">Chemical Peel - $85</option>
+                                    <option value="microderm">Microdermabrasion - $75</option>
+                                </optgroup>
+                                <optgroup label="Nails & Pedicure">
+                                    <option value="manicure">Manicure - $25</option>
+                                    <option value="gelmanicure">Gel Manicure - $40</option>
+                                    <option value="nailart">Nail Art - $35</option>
+                                    <option value="pedicure">Pedicure - $35</option>
+                                    <option value="spapedicure">Spa Pedicure - $55</option>
+                                    <option value="nailextensions">Nail Extensions - $60</option>
+                                </optgroup>
+                                <optgroup label="Hair Removal">
+                                    <option value="threading">Threading - $12</option>
+                                    <option value="eyebrowthread">Eyebrow Threading - $10</option>
+                                    <option value="waxing">Waxing - $25</option>
+                                    <option value="fullbodywax">Full Body Wax - $120</option>
+                                    <option value="laser">Laser Hair Removal - $80</option>
+                                </optgroup>
+                                <optgroup label="Wellness">
+                                    <option value="headmassage">Head Massage - $35</option>
+                                    <option value="footmassage">Foot Massage - $40</option>
+                                    <option value="bodymassage">Body Massage - $75</option>
+                                    <option value="aromatherapy">Aromatherapy - $60</option>
+                                    <option value="reflexology">Reflexology - $50</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <!-- Date and Time Selection -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">-- Select Time --</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="09:30">09:30 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="10:30">10:30 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="14:30">02:30 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="15:30">03:30 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="16:30">04:30 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                    <option value="17:30">05:30 PM</option>
+                                    <option value="18:00">06:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Beautician Selection -->
+                        <div class="form-group">
+                            <label for="beautician">Preferred Beautician</label>
+                            <select id="beautician" name="beautician">
+                                <option value="">-- Any Available --</option>
+                                <option value="sophia">Sophia Chen - Hair Specialist</option>
+                                <option value="emma">Emma Wilson - Makeup Artist</option>
+                                <option value="olivia">Olivia Brown - Skincare Expert</option>
+                                <option value="ava">Ava Martinez - Nail Specialist</option>
+                                <option value="isabella">Isabella Rodriguez - Wellness Therapist</option>
+                            </select>
+                        </div>
+
+                        <!-- Additional Notes -->
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Tell us about your preferences or any special requests..."></textarea>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the cancellation policy and terms of service</label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="submit-btn">Confirm Appointment</button>
+                    </form>
+                </div>
+
+                <!-- Sidebar Information -->
+                <div class="booking-info-sidebar">
+                    <div class="info-card">
+                        <h3>📍 Location</h3>
+                        <p>123 Luxury Avenue<br>Beauty City, BC 12345</p>
+                        <p><a href="#">View on Map</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🕐 Business Hours</h3>
+                        <ul>
+                            <li>Monday - Friday: 9:00 AM - 8:00 PM</li>
+                            <li>Saturday: 10:00 AM - 7:00 PM</li>
+                            <li>Sunday: 11:00 AM - 6:00 PM</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📞 Contact</h3>
+                        <p>📱 +1-800-BEAUTY-1</p>
+                        <p>📧 info@hsmbeauty.com</p>
+                        <p>💬 WhatsApp: +1-800-BEAUTY-1</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>💳 Payment Methods</h3>
+                        <ul>
+                            <li>💳 Credit/Debit Card</li>
+                            <li>📱 Digital Wallets</li>
+                            <li>💰 Cash</li>
+                            <li>🏦 Bank Transfer</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card policy">
+                        <h3>📋 Cancellation Policy</h3>
+                        <p>Free cancellation up to 24 hours before appointment. After 24 hours, 50% fee applies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Book With Us Section -->
+    <section class="why-book">
+        <div class="container">
+            <h2 class="section-title">Why Book With HSM?</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">✨</div>
+                    <h3>Luxury Experience</h3>
+                    <p>Enjoy a premium, luxurious environment designed for your comfort and relaxation</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">👨‍⚕️</div>
+                    <h3>Expert Professionals</h3>
+                    <p>Our certified and experienced beauticians ensure exceptional results every time</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">⏰</div>
+                    <h3>On-Time Service</h3>
+                    <p>We respect your time and ensure all appointments start and end on schedule</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🎁</div>
+                    <h3>Special Offers</h3>
+                    <p>Exclusive discounts and loyalty rewards for our valued repeat customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HSM Beauty Parlor</h3>
+                    <p>Your destination for luxury beauty and elegance</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="appointments.html">Appointments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>📍 123 Luxury Avenue, Beauty City, BC 12345</p>
+                    <p>📞 +1-800-BEAUTY-1</p>
+                    <p>📧 info@hsmbeauty.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HSM Beauty Parlor. All rights reserved. | Designed with ✨ by HSM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/appointments.js"></script>
+</body>
+</html>
